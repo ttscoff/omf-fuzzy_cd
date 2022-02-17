@@ -1,6 +1,6 @@
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
-#### fuzzy_cd
+#### Fuzzy cd
 
 > A plugin for [Oh My Fish][omf-link] which replaces the `cd` command with a fuzzy searching version.
 
@@ -14,11 +14,14 @@
 
 You'll definitely need to install `fasd`. This is easiest with Homebrew, just `brew install fasd`.
 
+You'll also want `fzf` available. Again, easiest with Homebrew: `brew install fzf`.
+
 To make use of the jump marks, you'll want to install [this particular jump plugin](https://github.com/oh-my-fish/plugin-jump) (via `omf install jump`, probably). The `__fuzzy_cd` function doesn't actually use it for jumping, but my replacement for the `jump` function does not include any functions for adding or listing marks. This version of jump creates symlinks in `~/.marks`, which is what fuzzy cd is set up to read.
 
 ## Install
 
 ```fish
+$ omf repositories add https://github.com/ttscoff/omf-packages
 $ omf install fuzzy_cd
 ```
 
