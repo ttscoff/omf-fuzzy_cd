@@ -35,6 +35,14 @@ else
 	__fcd_warn "......... jump is installed"
 end
 
+if not test (which fzf)
+	__fcd_warn -e "fuzzy_cd: fzf is not installed/available in PATH. Please install https://github.com/junegunn/fzf"
+	__fcd_warn "......... if you're on a Mac and have Homebrew installed, you can use `brew install fzf`"
+else
+	__fcd_warn "......... fzf is available"
+end
+
+
 if not test (which fasd)
 	__fcd_warn -e "fuzzy_cd: fasd is not installed/available in PATH. Please install https://github.com/clvv/fasd"
 	__fcd_warn "......... if you're on a Mac and have Homebrew installed, you can use `brew install fasd`"
