@@ -49,3 +49,5 @@ if not test (which fasd)
 else
 	__fcd_warn "......... fasd is available"
 end
+
+source ../init.fish
