@@ -50,5 +50,5 @@ else
 	__fcd_warn "......... fasd is available"
 end
 
-set curr_dir (dirname (readlink (status --current-filename)))
-source "$curr_dir/init.fish"
+set curr_dir (dirname (status --current-filename))
+source "$curr_dir/../init.fish"
